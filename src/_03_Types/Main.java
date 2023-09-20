@@ -25,6 +25,7 @@ public class Main {
         System.out.println(firstname);
         System.out.printf("%10.2s",firstname);
         double amount_of_money = 120.50;
+        System.out.println(amount_of_money);
         float another_amount_of_money = 120.50f;
         int count = 10;
         long another_count = 11L;
@@ -32,5 +33,10 @@ public class Main {
         final int ID = 12345;
         long color;
         String date = "20. Sept., 2023";
+        boolean hasEnoughMoney = true;
+        hasEnoughMoney = false;
+        System.out.println(hasEnoughMoney);
+        char letter = 'Z';
+        System.out.println((int)letter); // ASCII Tabelle! https://www.asciitable.com/
     }
 }
