@@ -12,7 +12,7 @@ public class SimpleFunctions {
         int result = add(number1,number2);
         System.out.println("s: " + result);
         // Aufruf von Divide:
-
+        divide(number1, number2); // Aufruf einer void Funktion
     }
 
     // Implement a function add(number1, number2)
@@ -43,4 +43,24 @@ public class SimpleFunctions {
             System.out.printf("%.2f", result);
         }
     }
+
+    // Implement 3 print functions that overload each
+    // other:
+    //print():
+    // Prints "Please enter a name:"
+    //print(String name):
+    // Prints "Welcome [name]! Please enter two numbers:"
+    //print(int n1, int n2):
+    // Prints "[n1] * [n2] = [n1*n2]"
+    public static void print(){
+        System.out.print("Please enter a name:");
+    }
+    public static void print(String name){
+        System.out.printf("Welcome %s! Please " +
+                "enter two numbers:", name);
+    }
+    public static void print(int n1, int n2){
+        System.out.printf("%d * %d = %d", n1, n2, n1 * n2);
+    }
+
 }
